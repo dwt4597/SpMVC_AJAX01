@@ -1,0 +1,78 @@
+@charset "UTF-8";
+*{
+		box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		-moz-sizing:border-box;
+	}
+	html, body {
+		width:100%;
+		
+	
+		
+	}
+	body{
+		margin:0px;
+		display: flex;
+		flex-direction: column;
+	}
+	header {
+		flex: 0 0 auto;
+		background-color: #26D845;
+		padding:1em; /* 글자 크기에 따라 padding을 유동적으로 조절하라*/
+		color: white;
+		text-align: center;
+	}
+	
+	h2{
+		color: inherit; /* header에 지정된 컬러를 상속받아라.*/
+		text-align: center;
+	}
+	nav{
+		display: flex;
+		background-color: blue;
+	}
+	nav a{
+		display: inline-block; /* 공부 */
+		flex : 0 0 auto;
+		margin-left:5px;
+		padding : .5em; /* nav a에는 margin을 주지말고, padding을줘라 /// 
+						a tag에 padding을 적절히 주면 
+						mouse hover에서 박스모양이 이쁘게 나온다.*/
+		text-decoration: none; /* 밑줄 삭제*/
+		color: white; 
+	
+	}
+	nav a:hover{
+	/*마우스 올렸을때*/
+	background-color: #7FFFFF;
+	color:blue;
+	}
+	section{
+		flex: 0 1 auto;
+		display: flex;
+		height: 100%;
+		padding: 5px;
+	}
+	#p-list{
+		flex: 0 0 68%;
+		border:1px solid blue;
+		margin:3px;
+	}
+	#s-cart{
+		flex: 0 0 28%;
+		border:1px solid blue;
+		margin:3px;
+	}
+	
+	footer{
+		flex: 0 1 30px;
+		background-color: #c0c0c0;
+		text-align: center;
+		padding: .3em;
+		color: white;
+	}
+	.items{
+		border: 1px solid black;
+	}
+	
+	
